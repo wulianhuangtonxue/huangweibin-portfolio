@@ -1,0 +1,10 @@
+{{- $headers := findRE "<h[1-6].*?>(.|\n])+?</h[1-6]>" .Content -}}
+{{- $has_headers := ge (len $headers) 1 -}}
+{{- if $has_headers -}}
+<div class="toc">
+    <div class="inner">
+        <h2>目录</h2>
+        {{- .TableOfContents }}
+    </div>
+</div>
+{{- end }}

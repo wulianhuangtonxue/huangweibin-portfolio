@@ -1,0 +1,59 @@
+# baseURL = 'https://huangweibin.dev/'  # 如果使用自定义域名
+baseURL = 'https://wulianhuangtonxue-dev.github.io/'  # 如果使用GitHub默认域名
+languageCode = 'zh-cn'
+title = '黄炜彬 - 全栈开发工程师'
+theme = 'PaperMod'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = true
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = true
+
+  [params.homeInfoParams]
+    Title = "你好，我是黄炜彬"
+    Content = "全栈开发工程师 | AI辅助编程专家"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/wulianhuangtonxue"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/你的LinkedIn用户名"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:hwb15218120562@126.com"
+
+[menu]
+  [[menu.main]]
+    identifier = "projects"
+    name = "项目"
+    url = "/projects/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "关于我"
+    url = "/about/"
+    weight = 20
+  [[menu.main]]
+    identifier = "blog"
+    name = "旧博客"
+    url = "https://wulianhuangtonxue.github.io/"
+    weight = 30

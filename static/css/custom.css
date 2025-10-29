@@ -1,0 +1,168 @@
+/* 自定义样式 - 左右分栏布局 */
+
+/* 1. 调整主容器布局 - 拉大50%宽度 */
+.main {
+    max-width: 2100px !important;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* 2. 内容容器 - 左右分栏布局 */
+.content-container {
+    display: flex !important;
+    gap: 40px !important;
+    width: 100% !important;
+    align-items: flex-start !important;
+}
+
+/* 3. 左侧主要内容区域 */
+.main-content {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+}
+
+.post-single .post-content {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* 4. 右侧目录侧边栏 - 拓宽目录 */
+.toc-sidebar {
+    flex: 0 0 450px !important;
+    position: sticky !important;
+    top: 100px !important;
+    align-self: flex-start !important;
+}
+
+/* 5. 目录样式优化 */
+.post-single .toc {
+    background: #f8f9fa !important;
+    border: 1px solid #e9ecef !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+}
+
+/* 5. 目录标题样式 */
+.post-single .toc h2 {
+    font-size: 1.1em !important;
+    margin: 0 0 15px 0 !important;
+    padding-bottom: 10px !important;
+    border-bottom: 2px solid #667eea !important;
+    color: #667eea !important;
+}
+
+/* 6. 目录列表样式 */
+.post-single .toc ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.post-single .toc ul ul {
+    padding-left: 15px !important;
+}
+
+.post-single .toc li {
+    margin: 8px 0 !important;
+}
+
+.post-single .toc a {
+    color: #495057 !important;
+    text-decoration: none !important;
+    font-size: 0.9em !important;
+    display: block !important;
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+    transition: all 0.2s !important;
+}
+
+.post-single .toc a:hover {
+    color: #667eea !important;
+    background: #f0f4ff !important;
+}
+
+.post-single .toc ul ul a {
+    font-size: 0.85em !important;
+    color: #6c757d !important;
+}
+
+/* 6. 响应式调整 - 移动端改为垂直布局 */
+@media (max-width: 1200px) {
+    .main {
+        padding: 0 30px !important;
+    }
+
+    .content-container {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .toc-sidebar {
+        position: static !important;
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+}
+
+/* 8. 改善代码块显示 */
+.content-container pre,
+.content-container code {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* 5. 响应式调整 */
+@media (max-width: 768px) {
+    .content-container,
+    main .content,
+    main .post,
+    main .page {
+        padding: 0 20px;
+    }
+}
+
+/* 6. 改善表格显示 */
+.content-container table {
+    max-width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+/* 7. 优化图片显示 */
+.content-container img,
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 8. 调整标题层级样式 */
+.content-container h1,
+.content-container h2,
+.content-container h3,
+.content-container h4,
+.content-container h5,
+.content-container h6 {
+    max-width: 100%;
+    margin-top: 2em;
+}
+
+/* 9. 改善行内代码样式 */
+.content-container p code,
+.content-container li code {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+/* 10. 调整引用块样式 */
+.content-container blockquote {
+    border-left: 4px solid #667eea;
+    padding-left: 20px;
+    margin: 20px 0;
+    color: #666;
+    max-width: 100%;
+}
