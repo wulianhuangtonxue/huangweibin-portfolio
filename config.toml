@@ -1,5 +1,5 @@
 # baseURL = 'https://huangweibin.dev/'  # 如果使用自定义域名
-baseURL = 'https://wulianhuangtonxue-dev.github.io/'  # 如果使用GitHub默认域名
+baseURL = 'https://wulianhuangtonxue.github.io/huangweibin-portfolio/'  # GitHub Pages 子路径
 languageCode = 'zh-cn'
 title = '黄炜彬 - 全栈开发工程师'
 theme = 'PaperMod'
