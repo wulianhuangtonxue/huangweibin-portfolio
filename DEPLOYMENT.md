@@ -5,7 +5,7 @@
 ## 📋 当前配置
 
 - **本地开发**：`http://localhost:1313/`
-- **GitHub Pages**：`https://wulianhuangtonxue.github.io/huangweibin-portfolio/`
+- **GitHub Pages**：`https://wulianhuangtonxue.github.io/`（注意：使用根域名）
 
 ## 🚀 部署到 GitHub Pages
 
@@ -24,16 +24,20 @@ git push origin main
 2. GitHub Actions 自动构建
 3. 部署到 GitHub Pages
 
+**⚠️ 重要**：使用根域名部署，网站将可通过 `https://wulianhuangtonxue.github.io/` 访问
+
 ### 手动部署
 
 如果需要手动部署：
 
 ```bash
-# 构建生产版本
-hugo --minify --baseURL 'https://wulianhuangtonxue.github.io/huangweibin-portfolio/'
+# 构建生产版本（使用根域名 baseURL）
+hugo --minify
 
 # 部署 public 目录到 gh-pages 分支
 ```
+
+⚠️ **注意**：如果需要使用子路径（如 `https://wulianhuangtonxue.github.io/huangweibin-portfolio/`），需要修改 `config.toml` 中的 `baseURL` 为完整的子路径，但这样会导致静态资源路径问题。
 
 ## 🔧 本地开发
 
@@ -50,14 +54,26 @@ hugo server -D --disableFastRender
 ### Gitee Pages
 
 ```bash
-hugo --minify --baseURL 'https://wulianhuangtonxue.gitee.io/huangweibin-portfolio/'
+# 修改 config.toml 中的 baseURL 为：
+baseURL = 'https://wulianhuangtonxue.gitee.io/'
+
+# 然后构建
+hugo --minify
 ```
 
 ### 自定义域名
 
 ```bash
-hugo --minify --baseURL 'https://huangweibin.dev/'
+# 修改 config.toml 中的 baseURL 为：
+baseURL = 'https://huangweibin.dev/'
+
+# 然后构建
+hugo --minify
 ```
+
+⚠️ **重要提醒**：
+- 建议始终使用根域名（如 `https://example.com/`）避免路径问题
+- 如需使用子路径，必须确保所有静态资源路径都使用 `relURL` 或 Hugo 路径函数处理
 
 ## 📁 项目结构
 
