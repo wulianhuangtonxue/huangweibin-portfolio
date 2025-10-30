@@ -154,6 +154,9 @@ draft: false
   <a href="https://github.com/wulianhuangtonxue" style="display: flex; align-items: center; background: #4facfe; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none;">
     💻 GitHub
   </a>
+  <a href="https://blog.csdn.net/weixin_54891898?spm=1000.2115.3001.5343" style="display: flex; align-items: center; background: #d32f2f; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none;">
+    📝 CSDN博客
+  </a>
 </div>
 
 ---

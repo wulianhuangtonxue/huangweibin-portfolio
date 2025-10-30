@@ -38,12 +38,6 @@ theme = 'PaperMod'
     name = "github"
     url = "https://github.com/wulianhuangtonxue"
   [[params.socialIcons]]
-    name = "linkedin"
-    url = "https://linkedin.com/in/你的LinkedIn用户名"
-  [[params.socialIcons]]
-    name = "email"
-    url = "mailto:hwb15218120562@126.com"
-  [[params.socialIcons]]
     name = "csdn"
     url = "https://blog.csdn.net/weixin_54891898?spm=1000.2115.3001.5343"
 
