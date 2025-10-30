@@ -1,0 +1,665 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>智能物联网设备软件开发 | 黄炜彬 - 全栈开发工程师</title>
+<meta name=keywords content>
+<meta name=description content="智能物联网设备软件开发 项目概述 参与智能物联网设备的软件开发，采用AI辅助编程模式高效实现复杂功能。运用Cursor、Claude等AI工具快速开发，同时保持代码质量审核和工程化实践。实现设备管理、音色复刻、云服务部署等完整功能链路。
+开发方式 AI辅助全栈开发实践 核心理念：AI是效率倍增器，不是代码替代品
+🤖 AI工具链 Cursor - 代码生成与优化 Claude - 架构设计辅助 DeepSeek - 特定场景优化   🔍 质量把控 AI代码严格审核 代码洁癖，不接受将就 多模型工具验证   📚 快速学习 新技术栈快速上手 在项目中深度学习 算法思维驱动实践     技术架构 服务端二次开发（xiaozhi-esp32-server） Python Vue.js Java Spring Boot  控制台UI重构、音色复刻服务、云服务部署
+ Flutter蓝牙配网APP（独立完成） Flutter Dart Riverpod BLE Kotlin模拟器  核心创新：设备中心架构，解决跨平台WiFi扫描兼容性问题
+技术成果：配网成功率从60%提升至95%+，Android+iOS统一代码库
+  主要贡献 1. 控制台UI重构 主题切换功能 重构控制台UI，新增主题切换功能，提升用户体验。支持亮色/暗色主题，满足不同使用场景需求。
+ 亮色主题
+  暗色主题
+   2. 音色复刻服务 阿里云API集成 集成阿里云音色复刻API，实现前后端完整功能链路。用户可上传音频样本，系统生成个性化音色模型。">
+<meta name=author content>
+<link rel=canonical href=https://wulianhuangtonxue.github.io/projects/iot-device/>
+<link crossorigin=anonymous href=/assets/css/stylesheet.b2b83f6ede1085a0d371f0a5cc577e4a6071ed62adb913b507c5fcafd95da7df.css integrity="sha256-srg/bt4QhaDTcfClzFd+SmBx7WKtuRO1B8X8r9ldp98=" rel="preload stylesheet" as=style>
+<link rel=icon href=https://wulianhuangtonxue.github.io/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://wulianhuangtonxue.github.io/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://wulianhuangtonxue.github.io/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://wulianhuangtonxue.github.io/apple-touch-icon.png>
+<link rel=mask-icon href=https://wulianhuangtonxue.github.io/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style>
+</noscript>
+<script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme='dark':localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme='light':window.matchMedia('(prefers-color-scheme: dark)').matches?document.querySelector("html").dataset.theme='dark':document.querySelector("html").dataset.theme='light'</script>
+<link rel=stylesheet href=/css/custom.css>
+</head>
+<body id=top><header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://wulianhuangtonxue.github.io/ accesskey=h title="黄炜彬 - 全栈开发工程师 (Alt + H)">黄炜彬 - 全栈开发工程师</a>
+<div class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</div>
+</div>
+<ul id=menu>
+<li>
+<a href=https://wulianhuangtonxue.github.io/projects/ title=项目>
+<span>项目</span>
+</a>
+</li>
+<li>
+<a href=https://wulianhuangtonxue.github.io/about/ title=关于我>
+<span>关于我</span>
+</a>
+</li>
+<li>
+<a href=https://wulianhuangtonxue.github.io/ title=旧博客>
+<span>旧博客</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<div class=breadcrumbs><a href=https://wulianhuangtonxue.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://wulianhuangtonxue.github.io/projects/>项目展示</a></div>
+<h1 class="post-title entry-hint-parent">
+智能物联网设备软件开发
+</h1>
+<div class=post-meta><span title="2025-03-01 00:00:00 +0800 CST">March 1, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>597 words</span>
+</div>
+</header>
+<div class=content-container style=display:flex;gap:30px>
+<div class=main-content style=flex:auto;min-width:0>
+<div class=post-content><h1 id=智能物联网设备软件开发>智能物联网设备软件开发<a hidden class=anchor aria-hidden=true href=#智能物联网设备软件开发>#</a></h1>
+<h2 id=项目概述>项目概述<a hidden class=anchor aria-hidden=true href=#项目概述>#</a></h2>
+<p>参与智能物联网设备的软件开发，采用<strong>AI辅助编程</strong>模式高效实现复杂功能。运用Cursor、Claude等AI工具快速开发，同时保持代码质量审核和工程化实践。实现设备管理、音色复刻、云服务部署等完整功能链路。</p>
+<h2 id=开发方式>开发方式<a hidden class=anchor aria-hidden=true href=#开发方式>#</a></h2>
+<div style="background:#f0f7ff;padding:20px;border-radius:10px;margin:20px 0">
+<h4 style=margin-top:0;color:#1976d2>AI辅助全栈开发实践</h4>
+<p><strong>核心理念：</strong>AI是效率倍增器，不是代码替代品</p>
+<div style=display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:15px>
+<div style=background:#fff;padding:15px;border-radius:8px>
+<h5 style="margin:0 0 10px;color:#f5576c">🤖 AI工具链</h5>
+<ul style=margin:0;padding-left:20px;font-size:.9em>
+<li>Cursor - 代码生成与优化</li>
+<li>Claude - 架构设计辅助</li>
+<li>DeepSeek - 特定场景优化</li>
+</ul>
+</div>
+<div style=background:#fff;padding:15px;border-radius:8px>
+<h5 style="margin:0 0 10px;color:#4facfe">🔍 质量把控</h5>
+<ul style=margin:0;padding-left:20px;font-size:.9em>
+<li>AI代码严格审核</li>
+<li>代码洁癖，不接受将就</li>
+<li>多模型工具验证</li>
+</ul>
+</div>
+<div style=background:#fff;padding:15px;border-radius:8px>
+<h5 style="margin:0 0 10px;color:#43a047">📚 快速学习</h5>
+<ul style=margin:0;padding-left:20px;font-size:.9em>
+<li>新技术栈快速上手</li>
+<li>在项目中深度学习</li>
+<li>算法思维驱动实践</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id=技术架构>技术架构<a hidden class=anchor aria-hidden=true href=#技术架构>#</a></h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin:30px 0">
+<div style="background:#f8f9fa;padding:20px;border-radius:10px;border-left:4px solid #f5576c">
+<h3 style=margin-top:0;color:#f5576c>服务端二次开发（xiaozhi-esp32-server）</h3>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:15px 0">
+<span style="background:#fff3e0;padding:5px 12px;border-radius:15px;font-size:.9em">Python</span>
+<span style="background:#fce4ec;padding:5px 12px;border-radius:15px;font-size:.9em">Vue.js</span>
+<span style="background:#f3e5f5;padding:5px 12px;border-radius:15px;font-size:.9em">Java</span>
+<span style="background:#fff8e1;padding:5px 12px;border-radius:15px;font-size:.9em">Spring Boot</span>
+</div>
+<p style=color:#666;font-size:.95em>控制台UI重构、音色复刻服务、云服务部署</p>
+</div>
+<div style="background:#f8f9fa;padding:20px;border-radius:10px;border-left:4px solid #4facfe">
+<h3 style=margin-top:0;color:#4facfe>Flutter蓝牙配网APP（独立完成）</h3>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:15px 0">
+<span style="background:#e0f2f1;padding:5px 12px;border-radius:15px;font-size:.9em">Flutter</span>
+<span style="background:#efebe9;padding:5px 12px;border-radius:15px;font-size:.9em">Dart</span>
+<span style="background:#fff3e0;padding:5px 12px;border-radius:15px;font-size:.9em">Riverpod</span>
+<span style="background:#fce4ec;padding:5px 12px;border-radius:15px;font-size:.9em">BLE</span>
+<span style="background:#f3e5f5;padding:5px 12px;border-radius:15px;font-size:.9em">Kotlin模拟器</span>
+</div>
+<p style=color:#666;font-size:.95em><strong>核心创新：</strong>设备中心架构，解决跨平台WiFi扫描兼容性问题</p>
+<p style=color:#666;font-size:.95em><strong>技术成果：</strong>配网成功率从60%提升至95%+，Android+iOS统一代码库</p>
+</div>
+</div>
+<h2 id=主要贡献>主要贡献<a hidden class=anchor aria-hidden=true href=#主要贡献>#</a></h2>
+<h3 id=1-控制台ui重构>1. 控制台UI重构<a hidden class=anchor aria-hidden=true href=#1-控制台ui重构>#</a></h3>
+<div style="background:#fff0f5;padding:20px;border-radius:10px;margin:20px 0">
+<h4 style=margin-top:0;color:#c2185b>主题切换功能</h4>
+<p>重构控制台UI，新增主题切换功能，提升用户体验。支持亮色/暗色主题，满足不同使用场景需求。</p>
+<div style=display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:15px>
+<div>
+<img src=/images/projects/iot-device/light_theme.png alt=亮色主题 style=width:100%;border-radius:8px>
+<p style=text-align:center;margin-top:5px;color:#666;font-size:.9em>亮色主题</p>
+</div>
+<div>
+<img src=/images/projects/iot-device/dark_theme.png alt=暗色主题 style=width:100%;border-radius:8px>
+<p style=text-align:center;margin-top:5px;color:#666;font-size:.9em>暗色主题</p>
+</div>
+</div>
+</div>
+<h3 id=2-音色复刻服务>2. 音色复刻服务<a hidden class=anchor aria-hidden=true href=#2-音色复刻服务>#</a></h3>
+<div style="background:#f0f7ff;padding:20px;border-radius:10px;margin:20px 0">
+<h4 style=margin-top:0;color:#1976d2>阿里云API集成</h4>
+<p>集成阿里云音色复刻API，实现前后端完整功能链路。用户可上传音频样本，系统生成个性化音色模型。</p>
+<div style=background:#fff;padding:15px;border-radius:8px;margin-top:10px>
+<p style=margin:0;font-family:monospace;color:#555>
+// 音色复刻流程<br>
+1. 用户上传音频样本<br>
+2. 系统预处理音频数据<br>
+3. 调用阿里云API生成音色模型<br>
+4. 模型验证与优化<br>
+5. 提供给用户使用
+</p>
+</div>
+</div>
+<h3 id=3-云服务部署>3. 云服务部署<a hidden class=anchor aria-hidden=true href=#3-云服务部署>#</a></h3>
+<div style="background:#e8f5e9;padding:20px;border-radius:10px;margin:20px 0">
+<h4 style=margin-top:0;color:#388e3c>阿里云ECS部署</h4>
+<p>完成阿里云ECS部署配置，保障服务稳定运行。包括服务器配置、环境搭建、安全设置等。</p>
+<div style=display:flex;flex-wrap:wrap;gap:10px;margin-top:15px>
+<span style="background:#c8e6c9;padding:5px 12px;border-radius:15px;font-size:.9em">服务器配置</span>
+<span style="background:#c8e6c9;padding:5px 12px;border-radius:15px;font-size:.9em">环境搭建</span>
+<span style="background:#c8e6c9;padding:5px 12px;border-radius:15px;font-size:.9em">安全设置</span>
+<span style="background:#c8e6c9;padding:5px 12px;border-radius:15px;font-size:.9em">监控告警</span>
+</div>
+</div>
+<h3 id=4-性能测试与优化>4. 性能测试与优化<a hidden class=anchor aria-hidden=true href=#4-性能测试与优化>#</a></h3>
+<div style="background:#fff8e1;padding:20px;border-radius:10px;margin:20px 0">
+<h4 style=margin-top:0;color:#f57c00>AI辅助性能测试体系</h4>
+<p>主导制定性能测试策略，运用AI工具快速生成测试工具和文档，实现专业级性能分析。</p>
+<div style=background:#fff;padding:15px;border-radius:8px;margin-top:10px>
+<h5 style="margin:0 0 10px">AI辅助开发流程：</h5>
+<ul style=margin:0;padding-left:20px;color:#555>
+<li><strong>需求分析</strong>：分析性能测试目标和关键指标</li>
+<li><strong>AI工具生成</strong>：指导AI生成87行测试方案和765行测试脚本</li>
+<li><strong>代码审核</strong>：审核AI生成的Python代码，确保逻辑正确性</li>
+<li><strong>结果分析</strong>：基于测试数据进行深度性能瓶颈分析</li>
+</ul>
+</div>
+<div style=background:#fff3e0;padding:15px;border-radius:8px;margin-top:10px>
+<h5 style="margin:0 0 10px;color:#f57c00">关键性能成果：</h5>
+<p style=margin:0;font-family:monospace;color:#555>
+- 识别TTS API限流瓶颈<br>
+- 发现网络连接稳定性问题<br>
+- 提供连接池优化建议<br>
+- 实现组件级性能监控方案
+</p>
+</div>
+</div>
+<h3 id=5-flutter蓝牙配网app开发核心项目>5. Flutter蓝牙配网APP开发（核心项目）<a hidden class=anchor aria-hidden=true href=#5-flutter蓝牙配网app开发核心项目>#</a></h3>
+<div style="background:#e3f2fd;padding:25px;border-radius:12px;margin:20px 0">
+<h4 style=margin-top:0;color:#1976d2>🎯 核心创新：设备中心架构</h4>
+<div style="background:#fff;padding:20px;border-radius:10px;margin:15px 0">
+<h5 style="margin:0 0 15px;color:#d32f2f">传统方案问题分析</h5>
+<div style=display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px>
+<div style="border-left:3px solid #f57c00;padding-left:15px">
+<strong style=color:#f57c00>Android碎片化</strong>
+<p style="margin:5px 0;color:#666;font-size:.9em">不同厂商ROM对WiFi扫描API支持不一致，权限申请复杂</p>
+</div>
+<div style="border-left:3px solid #f57c00;padding-left:15px">
+<strong style=color:#f57c00>iOS系统限制</strong>
+<p style="margin:5px 0;color:#666;font-size:.9em">禁止App直接扫描WiFi列表，无法获取网络信息</p>
+</div>
+<div style="border-left:3px solid #f57c00;padding-left:15px">
+<strong style=color:#f57c00>一致性问题</strong>
+<p style="margin:5px 0;color:#666;font-size:.9em">App显示网络与设备实际可连接网络不匹配</p>
+</div>
+</div>
+</div>
+<div style="background:#fff;padding:20px;border-radius:10px;margin:15px 0">
+<h5 style="margin:0 0 15px;color:#388e3c">创新解决方案：设备中心架构</h5>
+<div style="text-align:center;margin:20px 0">
+<div style=background:#f5f5f5;padding:20px;border-radius:10px;display:inline-block>
+<strong style=color:#1976d2;font-size:1.1em>架构流程图</strong>
+<div style=margin-top:15px>
+<div style="margin:10px 0">
+<span style="background:#2196f3;color:#fff;padding:8px 15px;border-radius:20px">📱 手机APP</span>
+<span style="margin:0 10px">←BLE指令→</span>
+<span style="background:#4caf50;color:#fff;padding:8px 15px;border-radius:20px">🔌 IoT设备</span>
+</div>
+<div style="margin:10px 0">
+<span style=color:#666>↑显示列表</span>
+<span style="margin:0 100px"></span>
+<span style=color:#666>↓扫描WiFi</span>
+</div>
+<div style="margin:10px 0">
+<span style="background:#ff9800;color:#fff;padding:8px 15px;border-radius:20px">📡 环境WiFi</span>
+</div>
+</div>
+</div>
+</div>
+<p style=color:#666><strong>核心思想：</strong>手机作为"遥控器"，设备自主扫描WiFi并返回结果，彻底解决跨平台兼容性问题</p>
+</div>
+</div>
+<div style="background:#fff3e0;padding:25px;border-radius:12px;margin:20px 0">
+<h4 style=margin-top:0;color:#f57c00>⚙️ 技术实现深度解析</h4>
+<div style=display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:20px>
+<div style=background:#fff;padding:20px;border-radius:10px>
+<h5 style="margin:0 0 15px;color:#f5576c">1. BLE JSON协议通信</h5>
+<div style="background:#f5f5f5;padding:15px;border-radius:8px;margin:10px 0">
+<p style=margin:0;font-family:monospace;font-size:.9em;color:#333>
+<strong>App → 设备:</strong><br>
+{"command": "scan_wifi"}<br><br>
+<strong>设备 → App:</strong><br>
+{<br>
+&nbsp;&nbsp;"type": "wifi_scan_result",<br>
+&nbsp;&nbsp;"payload": [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{"ssid": "MyHome-5G", "rssi": -55}<br>
+&nbsp;&nbsp;]<br>
+}
+</p>
+</div>
+<ul style="margin:10px 0 0 20px;color:#666;font-size:.9em">
+<li>MTU协商：从默认20字节提升至512字节，传输效率提升25倍</li>
+<li>数据分包重组：智能JSON对象提取，确保BLE传输限制下数据完整性</li>
+<li>状态反馈：{"type": "status", "payload": {"code": "wifi_connecting", "message": "..."}}</li>
+</ul>
+</div>
+<pre><code>&lt;div style=&quot;background: white; padding: 20px; border-radius: 10px;&quot;&gt;
+  &lt;h5 style=&quot;margin: 0 0 15px 0; color: #4facfe;&quot;&gt;2. Flutter架构设计&lt;/h5&gt;
+  &lt;div style=&quot;background: #e3f2fd; padding: 15px; border-radius: 8px; margin: 10px 0;&quot;&gt;
+    &lt;p style=&quot;margin: 0; font-family: monospace; font-size: 0.9em; color: #333;&quot;&gt;
+      &lt;strong&gt;Riverpod状态管理:&lt;/strong&gt;&lt;br&gt;
+      final deviceProvider = StateNotifierProvider.family&lt;&lt;br&gt;
+      &amp;nbsp;&amp;nbsp;DeviceConnectionNotifier,&lt;br&gt;
+      &amp;nbsp;&amp;nbsp;DeviceConnectionState,&lt;br&gt;
+      &amp;nbsp;&amp;nbsp;BluetoothDevice&lt;br&gt;
+      &gt;((ref, device) =&gt; DeviceConnectionNotifier(device));
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;ul style=&quot;margin: 10px 0 0 20px; color: #666; font-size: 0.9em;&quot;&gt;
+    &lt;li&gt;Provider解耦：代码复用率提升60%，UI响应式更新&lt;/li&gt;
+    &lt;li&gt;Mock模式：开发期无需真实设备，UI测试效率提升3倍&lt;/li&gt;
+    &lt;li&gt;错误恢复：超时重试+连接状态管理，配网成功率95%+&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;background: white; padding: 20px; border-radius: 10px;&quot;&gt;
+  &lt;h5 style=&quot;margin: 0 0 15px 0; color: #43a047;&quot;&gt;3. 用户体验优化&lt;/h5&gt;
+  &lt;ul style=&quot;margin: 10px 0 0 20px; color: #666; font-size: 0.9em;&quot;&gt;
+    &lt;li&gt;&lt;strong&gt;智能凭证填充：&lt;/strong&gt;SharedPreferences存储历史密码，O(1)查找复杂度&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;实时状态反馈：&lt;/strong&gt;配网进度可视化，成功/失败明确提示&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;调试工具：&lt;/strong&gt;内置日志系统，支持复制和清空，bug定位效率提升5倍&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;信号强度可视化：&lt;/strong&gt;根据RSSI值动态显示WiFi图标&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+</div>
+<div style="background:#f3e5f5;padding:25px;border-radius:12px;margin:20px 0">
+<h4 style=margin-top:0;color:#7b1fa2>📦 关键代码实现</h4>
+<div style="background:#fff;padding:20px;border-radius:10px;margin:15px 0">
+<h5 style="margin:0 0 10px;color:#c2185b">BLE数据处理核心逻辑</h5>
+<div style=background:#263238;padding:15px;border-radius:8px;overflow-x:auto>
+<pre style=margin:0;color:#aed581;font-size:.85em;line-height:1.5><code>void _processDataBuffer() {
+  final bufferContent = _dataBuffer.toString();
+  int processedLength = 0;
+<p>// 智能JSON对象提取：处理分包数据
+while (processedLength &lt; bufferContent.length) {
+int braceCount = 0;
+bool inString = false;
+bool escapeNext = false;
+int endIndex = -1;</p>
+<pre><code>for (int i = processedLength; i &lt; bufferContent.length; i++) {
+  final char = bufferContent[i];
+
+  if (escapeNext) {
+    escapeNext = false;
+    continue;
+  }
+
+  if (char == '\\' &amp;&amp; inString) {
+    escapeNext = true;
+    continue;
+  }
+
+  if (char == '&quot;' &amp;&amp; !escapeNext) {
+    inString = !inString;
+    continue;
+  }
+
+  if (!inString) {
+    if (char == '{') {
+      braceCount++;
+    } else if (char == '}') {
+      braceCount--;
+      if (braceCount == 0) {
+        endIndex = i;
+        break;
+      }
+    }
+  }
+}
+
+if (endIndex == -1) break; // JSON不完整，等待更多数据
+
+final jsonString = bufferContent.substring(processedLength, endIndex + 1);
+final jsonObject = jsonDecode(jsonString);
+_handleParsedJson(jsonObject);
+
+processedLength = endIndex + 1;
+</code></pre>
+<p>}</p>
+<p>// 清理已处理数据
+final remainingData = bufferContent.substring(processedLength);
+_dataBuffer.clear();
+_dataBuffer.write(remainingData);
+}</code></pre>
+</div>
+<p style="margin:10px 0 0;color:#666;font-size:.9em">
+<strong>算法优化：</strong>使用栈思想处理大括号匹配，确保JSON对象完整性，时间复杂度O(n)
+</p></p>
+</div>
+</div>
+<div style="background:#e8f5e9;padding:25px;border-radius:12px;margin:20px 0">
+<h4 style=margin-top:0;color:#388e3c>📊 性能指标与成果</h4>
+<div style=display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:20px>
+<div style=background:#fff;padding:20px;border-radius:10px;text-align:center>
+<div style=font-size:2em;color:#4caf50;font-weight:700>95%+</div>
+<div style=color:#666;margin-top:5px>配网成功率</div>
+<div style=color:#999;font-size:.85em>从传统方案60%提升</div>
+</div>
+<div style=background:#fff;padding:20px;border-radius:10px;text-align:center>
+<div style=font-size:2em;color:#2196f3;font-weight:700>15秒</div>
+<div style=color:#666;margin-top:5px>平均配网时间</div>
+<div style=color:#999;font-size:.85em>含扫描和连接</div>
+</div>
+<div style=background:#fff;padding:20px;border-radius:10px;text-align:center>
+<div style=font-size:2em;color:#ff9800;font-weight:700>25倍</div>
+<div style=color:#666;margin-top:5px>传输效率提升</div>
+<div style=color:#999;font-size:.85em>MTU协商优化</div>
+</div>
+<div style=background:#fff;padding:20px;border-radius:10px;text-align:center>
+<div style=font-size:2em;color:#9c27b0;font-weight:700>100%</div>
+<div style=color:#666;margin-top:5px>跨平台兼容</div>
+<div style=color:#999;font-size:.85em>Android+iOS统一</div>
+</div>
+</div>
+</div>
+<div style=display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:20px>
+<div>
+<img src=/images/projects/iot-device/blue_scan.jpg alt=蓝牙扫描 style=width:100%;border-radius:8px>
+<p style=text-align:center;margin-top:5px;color:#666;font-size:.9em>蓝牙设备扫描</p>
+</div>
+<div>
+<img src=/images/projects/iot-device/wifi_config.jpg alt=WiFi配网 style=width:100%;border-radius:8px>
+<p style=text-align:center;margin-top:5px;color:#666;font-size:.9em>WiFi配置界面</p>
+</div>
+</div>
+<h3 id=6-物联网设备模拟器开发配套项目>6. 物联网设备模拟器开发（配套项目）<a hidden class=anchor aria-hidden=true href=#6-物联网设备模拟器开发配套项目>#</a></h3>
+<div style="background:#fff3e0;padding:25px;border-radius:12px;margin:20px 0">
+<h4 style=margin-top:0;color:#f57c00>🤖 Kotlin Android模拟器</h4>
+<div style="background:#fff;padding:20px;border-radius:10px;margin:15px 0">
+<h5 style="margin:0 0 15px;color:#e65100">开发背景与价值</h5>
+<div style="border-left:4px solid #ff9800;padding-left:15px;margin:10px 0">
+<p style="margin:5px 0;color:#666"><strong>问题：</strong>实际物联网设备开发周期长，硬件调试困难，影响APP开发进度</p>
+<p style="margin:5px 0;color:#666"><strong>解决方案：</strong>开发Android原生模拟器，完全模拟设备BLE行为和WiFi响应</p>
+<p style="margin:5px 0;color:#666"><strong>价值：</strong>实现APP和固件并行开发，开发效率提升50%+</p>
+</div>
+</div>
+<div style="background:#fff;padding:20px;border-radius:10px;margin:15px 0">
+<h5 style="margin:0 0 15px;color:#e65100">核心技术实现</h5>
+<div style=display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px>
+<div>
+<h6 style="margin:0 0 10px;color:#f5576c">BLE GATT服务模拟</h6>
+<div style=background:#f5f5f5;padding:12px;border-radius:8px>
+<p style=margin:0;font-family:monospace;font-size:.85em;color:#333>
+Service UUID: 0000AAAA-0000-1000-8000-00805f9b34fb<br>
+Characteristic UUID: 0000BBB1-0000-1000-8000-00805f9b34fb
+</p>
+</div>
+</div>
+<div>
+<h6 style="margin:0 0 10px;color:#4facfe">WiFi扫描结果模拟</h6>
+<div style=background:#f5f5f5;padding:12px;border-radius:8px>
+<p style=margin:0;font-family:monospace;font-size:.85em;color:#333>
+MyHome-5G (-45dBm, WPA2)<br>
+Office-WiFi (-68dBm, WPA3)<br>
+CoffeeShop-Free (-75dBm, OPEN)
+</p>
+</div>
+</div>
+<div>
+<h6 style="margin:0 0 10px;color:#43a047">配网过程模拟</h6>
+<div style=background:#f5f5f5;padding:12px;border-radius:8px>
+<p style=margin:0;font-family:monospace;font-size:.85em;color:#333>
+连接中... → 认证中... → 成功/失败<br>
+可配置成功/失败比例
+</p>
+</div>
+</div>
+</div>
+</div>
+<div style="background:#fff;padding:20px;border-radius:10px;margin:15px 0">
+<h5 style="margin:0 0 15px;color:#e65100">核心代码示例</h5>
+<div style=background:#263238;padding:15px;border-radius:8px;overflow-x:auto>
+<pre style=margin:0;color:#aed581;font-size:.85em;line-height:1.5><code>fun simulateWifiScanResult() {
+    val wifiList = listOf(
+        WifiNetwork("MyHome-5G", -45, "WPA2"),
+        WifiNetwork("Office-WiFi", -68, "WPA3"),
+        WifiNetwork("CoffeeShop-Free", -75, "OPEN")
+    )
+<pre><code>val jsonResult = JSONObject().apply {
+    put(&quot;type&quot;, &quot;wifi_scan_result&quot;)
+    put(&quot;payload&quot;, JSONArray().apply {
+        wifiList.forEach { network -&gt;
+            put(JSONObject().apply {
+                put(&quot;ssid&quot;, network.ssid)
+                put(&quot;rssi&quot;, network.rssi)
+                put(&quot;encryption&quot;, network.encryption)
+            })
+        }
+    })
+}
+
+sendJsonNotification(jsonResult.toString())
+</code></pre>
+<p>}</code></pre>
+</div></p>
+</div>
+<div style="background:#e8f5e9;padding:15px;border-radius:8px;margin:15px 0">
+<h6 style="margin:0 0 10px;color:#2e7d32">与主项目的协同价值</h6>
+<ul style=margin:0;padding-left:20px;color:#666;font-size:.9em>
+<li><strong>开发效率：</strong>无需等待硬件，APP和固件可并行开发</li>
+<li><strong>测试覆盖：</strong>模拟各种网络环境（强/弱信号、不同加密方式）</li>
+<li><strong>调试便利：</strong>重现特定问题场景，如连接超时、认证失败等</li>
+<li><strong>持续集成：</strong>模拟器可集成到CI/CD流程，自动测试APP功能</li>
+</ul>
+</div>
+</div>
+<h2 id=演示视频>演示视频<a hidden class=anchor aria-hidden=true href=#演示视频>#</a></h2>
+<div style="margin:30px 0">
+<h3>服务端演示</h3>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.1);background:#f5f5f5">
+<video style=position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:12px controls preload=metadata>
+<source src=/video/iot_device_server.mp4 type=video/mp4>
+您的浏览器不支持视频播放，请<a href=/video/iot_device_server.mp4>下载视频文件</a>查看。
+</video>
+</div>
+<p style=text-align:center;margin-top:10px;color:#666;font-size:.9em>服务端完整演示视频 (MP4格式，支持在线播放)</p>
+</div>
+<div style="margin:30px 0">
+<h3>配网-模拟联动演示</h3>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.1);background:#f5f5f5">
+<video style=position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:12px controls preload=metadata>
+<source src=/video/networking_play.mp4 type=video/mp4>
+您的浏览器不支持视频播放，请<a href=/video/networking_play.mp4>下载视频文件</a>查看。
+</video>
+</div>
+<p style=text-align:center;margin-top:10px;color:#666;font-size:.9em>配网-模拟联动 (MP4格式，支持在线播放)</p>
+</div>
+<div style="margin:30px 0">
+<h3>配网App</h3>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.1);background:#f5f5f5">
+<video style=position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:12px controls preload=metadata>
+<source src=/video/networking.mp4 type=video/mp4>
+您的浏览器不支持视频播放，请<a href=/video/networking.mp4>下载视频文件</a>查看。
+</video>
+</div>
+<p style=text-align:center;margin-top:10px;color:#666;font-size:.9em>配网app (MP4格式，支持在线播放)</p>
+</div>
+<div style="margin:30px 0">
+<h3>模拟器App</h3>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.1);background:#f5f5f5">
+<video style=position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:12px controls preload=metadata>
+<source src=/video/devicesimulator.mp4 type=video/mp4>
+您的浏览器不支持视频播放，请<a href=/video/devicesimulator.mp4>下载视频文件</a>查看。
+</video>
+</div>
+<p style=text-align:center;margin-top:10px;color:#666;font-size:.9em>物联网设备模拟器 (MP4格式，支持在线播放)</p>
+</div>
+<h2 id=技术亮点>技术亮点<a hidden class=anchor aria-hidden=true href=#技术亮点>#</a></h2>
+<div style="background:#f5f5f5;padding:25px;border-radius:12px;margin:30px 0">
+<h3 style=margin-top:0>技术实现亮点</h3>
+<div style=display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:20px>
+<div>
+<h4 style=color:#f5576c>🤖 AI辅助全栈开发</h4>
+<p style=color:#666;font-size:.95em>Cursor + Claude + DeepSeek工具链，根据任务特点选择最佳工具，不盲目依赖单一模型</p>
+<div style=background:#fff;padding:10px;border-radius:8px;margin-top:10px>
+<p style=margin:0;font-size:.85em;color:#555>
+• 架构设计：方案评审2天→4小时<br>
+• 代码生成：日产出提升2.5倍<br>
+• 文档产出：效率提升3倍<br>
+• Bug修复：定位效率提升40%
+</p>
+</div>
+</div>
+<div>
+<h4 style=color:#4facfe>📐 算法思维驱动</h4>
+<p style=color:#666;font-size:.95em>LeetCode Knight算法基础，用算法思维优化工程实践，代码质量把控</p>
+<div style=background:#fff;padding:10px;border-radius:8px;margin-top:10px>
+<p style=margin:0;font-size:.85em;color:#555>
+• BLE数据处理：O(n)复杂度<br>
+• JSON解析：栈思想优化<br>
+• 状态管理：有限状态机<br>
+• 缓存策略：O(1)查找优化
+</p>
+</div>
+</div>
+<div>
+<h4 style=color:#43a047>🔄 快速技术栈切换</h4>
+<p style=color:#666;font-size:.95em>Python + Vue.js + Java + Flutter多技术栈，通过AI辅助快速上手并深度实践</p>
+<div style=background:#fff;padding:10px;border-radius:8px;margin-top:10px>
+<p style=margin:0;font-size:.85em;color:#555>
+• 单周跨栈：Flutter→Electron→Go<br>
+• 状态管理：思想贯穿全栈<br>
+• 学习曲线：缩短60%时间
+</p>
+</div>
+</div>
+<div>
+<h4 style=color:#fb8c00>🔍 代码质量审核</h4>
+<p style=color:#666;font-size:.95em>对AI生成代码严格审核，具备代码洁癖，确保生产环境稳定性和可维护性</p>
+<div style=background:#fff;padding:10px;border-radius:8px;margin-top:10px>
+<p style=margin:0;font-size:.85em;color:#555>
+• 70% AI生成 + 30%人工优化<br>
+• 100%空导入清理<br>
+• 完整文档覆盖
+</p>
+</div>
+</div>
+<div>
+<h4 style=color:#9c27b0>⚡ 高效交付能力</h4>
+<p style=color:#666;font-size:.95em>AI辅助快速原型验证，缩短试错周期，在项目中学习和交付价值</p>
+<div style=background:#fff;padding:10px;border-radius:8px;margin-top:10px>
+<p style=margin:0;font-size:.85em;color:#555>
+• 配网APP：3周完成<br>
+• Android+iOS统一代码库<br>
+• 模拟器：并行开发50%提升
+</p>
+</div>
+</div>
+<div>
+<h4 style=color:#00bcd4>🧪 性能优化专家</h4>
+<p style=color:#666;font-size:.95em>制定性能测试策略，AI辅助生成测试工具，深度分析系统瓶颈</p>
+<div style=background:#fff;padding:10px;border-radius:8px;margin-top:10px>
+<p style=margin:0;font-size:.85em;color:#555>
+• 配网成功率：60%→95%+<br>
+• 传输效率：提升25倍<br>
+• MTU优化：20字节→512字节
+</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id=项目成果>项目成果<a hidden class=anchor aria-hidden=true href=#项目成果>#</a></h2>
+<div style="background:linear-gradient(135deg,#f093fb 0%,#f5576c 100%);padding:30px;border-radius:12px;color:#fff;margin:30px 0">
+<h3 style=margin-top:0>项目成果与价值</h3>
+<ul style=padding-left:20px>
+<li><strong>用户体验提升</strong>：控制台UI重构，主题切换功能，显著提升用户体验</li>
+<li><strong>功能扩展</strong>：音色复刻服务集成，扩展产品功能边界</li>
+<li><strong>稳定性保障</strong>：云服务部署，性能测试，保障系统稳定运行</li>
+<li><strong>跨平台支持</strong>：移动端APP开发，支持Android和iOS平台</li>
+</ul>
+</div>
+<hr>
+<div style=text-align:center;margin-top:40px>
+<a href=/projects/ style="display:inline-block;background:#f5576c;color:#fff;padding:12px 24px;border-radius:25px;text-decoration:none;font-weight:500;margin:0 10px">← 返回项目列表</a>
+</div>
+</div>
+<footer class=post-footer>
+<ul class=post-tags>
+</ul>
+<nav class=paginav>
+<a class=prev href=https://wulianhuangtonxue.github.io/projects/comfyui-app/>
+<span class=title>« Prev</span>
+<br>
+<span>ComfyUI生态应用开发</span>
+</a>
+</nav>
+</footer>
+</div>
+<aside class=toc-sidebar>
+<div class=toc>
+<div class=inner>
+<h2>目录</h2><nav id=TableOfContents>
+<ul>
+<li><a href=#项目概述>项目概述</a></li>
+<li><a href=#开发方式>开发方式</a></li>
+<li><a href=#技术架构>技术架构</a></li>
+<li><a href=#主要贡献>主要贡献</a>
+<ul>
+<li><a href=#1-控制台ui重构>1. 控制台UI重构</a></li>
+<li><a href=#2-音色复刻服务>2. 音色复刻服务</a></li>
+<li><a href=#3-云服务部署>3. 云服务部署</a></li>
+<li><a href=#4-性能测试与优化>4. 性能测试与优化</a></li>
+<li><a href=#5-flutter蓝牙配网app开发核心项目>5. Flutter蓝牙配网APP开发（核心项目）</a></li>
+<li><a href=#6-物联网设备模拟器开发配套项目>6. 物联网设备模拟器开发（配套项目）</a></li>
+</ul>
+</li>
+<li><a href=#演示视频>演示视频</a></li>
+<li><a href=#技术亮点>技术亮点</a></li>
+<li><a href=#项目成果>项目成果</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</aside>
+</div>
+</article>
+</main>
+<footer class=footer>
+<span>&copy; 2025 <a href=https://wulianhuangtonxue.github.io/>黄炜彬 - 全栈开发工程师</a></span> ·
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a>
+<script>let menu=document.getElementById('menu');if(menu){const a=localStorage.getItem("menu-scroll-position");a&&(menu.scrollLeft=parseInt(a,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{const a=document.querySelector("html");a.dataset.theme==="dark"?(a.dataset.theme='light',localStorage.setItem("pref-theme",'light')):(a.dataset.theme='dark',localStorage.setItem("pref-theme",'dark'))})</script>
+<script>document.querySelectorAll('pre > code').forEach(b=>{const c=b.parentNode.parentNode,a=document.createElement('button');a.classList.add('copy-code'),a.innerHTML='copy';function d(){a.innerHTML='copied!',setTimeout(()=>{a.innerHTML='copy'},2e3)}a.addEventListener('click',e=>{if('clipboard'in navigator){navigator.clipboard.writeText(b.textContent),d();return}const a=document.createRange();a.selectNodeContents(b);const c=window.getSelection();c.removeAllRanges(),c.addRange(a);try{document.execCommand('copy'),d()}catch(a){}c.removeRange(a)}),c.classList.contains("highlight")?c.appendChild(a):c.parentNode.firstChild==c||(b.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?b.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(a):b.parentNode.appendChild(a))})</script>
+</body>
+</html>

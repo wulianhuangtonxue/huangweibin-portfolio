@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>黄炜彬 - 全栈开发工程师</title><link>https://wulianhuangtonxue.github.io/</link><description>Recent content on 黄炜彬 - 全栈开发工程师</description><generator>Hugo -- 0.92.2</generator><language>zh-cn</language><lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://wulianhuangtonxue.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>ComfyUI生态应用开发</title><link>https://wulianhuangtonxue.github.io/projects/comfyui-app/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0800</pubDate><guid>https://wulianhuangtonxue.github.io/projects/comfyui-app/</guid><description>ComfyUI生态应用开发 项目概述 基于ComfyUI生态的高性能Windows桌面应用开发项目，实现了工作流加载速度提升5-10倍的突破性优化，包含前端React界面、Electron桌面框架、Node.js后端服务及SQLite数据库设计，形成完整的技术闭环。
+技术架构 客户端应用 React.js Node.js Electron SQLite(内存数据库实现) Windows桌面应用，提供直观的工作流操作界面，SQLite内存数据库实现(运行时数据完全存储在内存中，定期同步到加密文件)
+服务端开发 Go Gin PostgreSQL Redis(缓存) 设备认证系统：基于MAC地址和CPU ID的设备注册、验证、升级；设备心跳维持
+验证码系统：简单/复杂验证码生成（支持自定义长度20-64位）；验证码管理和分发
+管理员后台：React + TypeScript + Ant Design前端界面；验证码管理；设备监控；设备级别动态配置
+设备分级授权：Basic/Standard/Premium/Custom四级授权体系，支持自定义最大连接数和过期时间
+技术亮点：JWT双令牌体系，分层架构设计，Redis缓存加速，IP限流防护，RESTful API设计 通信机制 HTTP + WebSocket双通道通信，实现实时数据同步
+核心功能与创新 1. 性能优化 工作流加载速度优化至1秒内 通过内存数据库、数据预加载和缓存机制实现性能提升5-10倍，工作流加载时间从5-10秒优化至1秒内。
+优化前：平均加载时间 5-10秒
+优化后：平均加载时间 &amp;lt; 1秒
+性能提升：5-10倍
+内存数据库访问速度提升约20倍 2. 通信机制 HTTP+WebSocket双通道通信 实现HTTP+WebSocket双通道通信，确保数据一致性和实时性，配合指数退避重试策略，保障通信稳定性。
+function connectWithRetry() {
+&amp;nbsp;&amp;nbsp; WebSocket连接逻辑
+&amp;nbsp;&amp;nbsp; 指数退避重试策略
+&amp;nbsp;&amp;nbsp; 实时数据同步
+} 3. 安全加密 基于设备指纹的多层加密机制 应用源码V8加密 + 数据库AES-256-CBC加密，基于设备特征的AES-256-CBC加密，PBKDF2密钥派生（100,000次迭代），确保商业代码安全。</description></item><item><title>智能物联网设备软件开发</title><link>https://wulianhuangtonxue.github.io/projects/iot-device/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0800</pubDate><guid>https://wulianhuangtonxue.github.io/projects/iot-device/</guid><description>智能物联网设备软件开发 项目概述 参与智能物联网设备的软件开发，采用AI辅助编程模式高效实现复杂功能。运用Cursor、Claude等AI工具快速开发，同时保持代码质量审核和工程化实践。实现设备管理、音色复刻、云服务部署等完整功能链路。
+开发方式 AI辅助全栈开发实践 核心理念：AI是效率倍增器，不是代码替代品
+🤖 AI工具链 Cursor - 代码生成与优化 Claude - 架构设计辅助 DeepSeek - 特定场景优化 🔍 质量把控 AI代码严格审核 代码洁癖，不接受将就 多模型工具验证 📚 快速学习 新技术栈快速上手 在项目中深度学习 算法思维驱动实践 技术架构 服务端二次开发（xiaozhi-esp32-server） Python Vue.js Java Spring Boot 控制台UI重构、音色复刻服务、云服务部署
+Flutter蓝牙配网APP（独立完成） Flutter Dart Riverpod BLE Kotlin模拟器 核心创新：设备中心架构，解决跨平台WiFi扫描兼容性问题
+技术成果：配网成功率从60%提升至95%+，Android+iOS统一代码库
+主要贡献 1. 控制台UI重构 主题切换功能 重构控制台UI，新增主题切换功能，提升用户体验。支持亮色/暗色主题，满足不同使用场景需求。
+亮色主题
+暗色主题
+2. 音色复刻服务 阿里云API集成 集成阿里云音色复刻API，实现前后端完整功能链路。用户可上传音频样本，系统生成个性化音色模型。</description></item><item><title/><link>https://wulianhuangtonxue.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wulianhuangtonxue.github.io/about/</guid><description>黄炜彬 软件开发工程师 | 全栈开发 | AI辅助编程
+📧 hwb15218120562@126.com | 📱15218120562 🎓 深圳技术大学（广东重本） 物联网工程（2024届优秀毕业生）
+核心技能 编程语言： C++ | Go | Python | JavaScript/TypeScript | Java | Dart/Flutter | Rust 全栈技术： React.js | Node.js | Electron | Vue.js | Spring Boot | Gin框架 数据存储： PostgreSQL | Redis | SQLite | MySQL 开发工具： Cursor | Claude Code | Git | Docker | Linux 特色能力： AI辅助全栈开发 | 快速技术栈切换 | 0-1项目开发 | 算法思维 | 代码质量把控</description></item></channel></rss>
