@@ -104,10 +104,9 @@ draft: false
     <video
       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 12px;"
       controls
-      poster="/video/comfyui_app_poster.jpg"
       preload="metadata">
-      <source src="/video/comfyui_app.mp4" type="video/mp4">
-      您的浏览器不支持视频播放，请<a href="/video/comfyui_app.mp4">下载视频文件</a>查看。
+      <source src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/video/comfyui_app.mp4" type="video/mp4">
+      您的浏览器不支持视频播放，请<a href="https://wulianhuangtonxue.github.io/huangweibin-portfolio/video/comfyui_app.mp4">下载视频文件</a>查看。
     </video>
   </div>
   <p style="text-align: center; margin-top: 10px; color: #666; font-size: 0.9em;">ComfyUI应用完整演示视频 (MP4格式，支持在线播放)</p>
@@ -119,35 +118,35 @@ draft: false
   <h3>界面展示</h3>
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
     <div>
-      <img src="/images/projects/comfyui-app/index.png" alt="首页" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <img src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/images/projects/comfyui-app/index.png" alt="首页" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
       <p style="text-align: center; margin-top: 10px; color: #666;">首页</p>
     </div>
     <div>
-      <img src="/images/projects/comfyui-app/setting.png" alt="设置页" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <img src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/images/projects/comfyui-app/setting.png" alt="设置页" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
       <p style="text-align: center; margin-top: 10px; color: #666;">设置页</p>
     </div>
     <div>
-      <img src="/images/projects/comfyui-app/function_editor.png" alt="工作流编辑器" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <img src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/images/projects/comfyui-app/function_editor.png" alt="工作流编辑器" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
       <p style="text-align: center; margin-top: 10px; color: #666;">工作流编辑器</p>
     </div>
     <div>
-      <img src="/images/projects/comfyui-app/function_editior_model_library.png" alt="工作流编辑器-内置模型索引库" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <img src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/images/projects/comfyui-app/function_editior_model_library.png" alt="工作流编辑器-内置模型索引库" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
       <p style="text-align: center; margin-top: 10px; color: #666;">工作流编辑器-内置模型索引库</p>
     </div>
     <div>
-      <img src="/images/projects/comfyui-app/mask_editor.png" alt="遮罩编辑器" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <img src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/images/projects/comfyui-app/mask_editor.png" alt="遮罩编辑器" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
       <p style="text-align: center; margin-top: 10px; color: #666;">遮罩编辑器</p>
     </div>
     <div>
-      <img src="/images/projects/comfyui-app/service_login.png" alt="服务端登录页" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <img src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/images/projects/comfyui-app/service_login.png" alt="服务端登录页" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
       <p style="text-align: center; margin-top: 10px; color: #666;">服务端登录页</p>
     </div>
     <div>
-      <img src="/images/projects/comfyui-app/service_code.png" alt="服务端验证码管理" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <img src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/images/projects/comfyui-app/service_code.png" alt="服务端验证码管理" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
       <p style="text-align: center; margin-top: 10px; color: #666;">服务端验证码管理</p>
     </div>
     <div>
-      <img src="/images/projects/comfyui-app/service_device.png" alt="服务端设备管理" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <img src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/images/projects/comfyui-app/service_device.png" alt="服务端设备管理" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
       <p style="text-align: center; margin-top: 10px; color: #666;">服务端设备管理</p>
     </div>
   </div>
@@ -234,6 +233,6 @@ draft: false
 ---
 
 <div style="text-align: center; margin-top: 40px;">
-  <a href="/projects/" style="display: inline-block; background: #667eea; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 500; margin: 0 10px;">← 返回项目列表</a>
+  <a href="../" style="display: inline-block; background: #667eea; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 500; margin: 0 10px;">← 返回项目列表</a>
   <!-- <a href="https://github.com/wulianhuangtonxue/comfyui-app" style="display: inline-block; background: #333; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 500; margin: 0 10px;">查看源码 →</a> -->
 </div>

@@ -79,11 +79,11 @@ draft: false
   <p>重构控制台UI，新增主题切换功能，提升用户体验。支持亮色/暗色主题，满足不同使用场景需求。</p>
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px;">
     <div>
-      <img src="/images/projects/iot-device/light_theme.png" alt="亮色主题" style="width: 100%; border-radius: 8px;">
+      <img src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/images/projects/iot-device/light_theme.png" alt="亮色主题" style="width: 100%; border-radius: 8px;">
       <p style="text-align: center; margin-top: 5px; color: #666; font-size: 0.9em;">亮色主题</p>
     </div>
     <div>
-      <img src="/images/projects/iot-device/dark_theme.png" alt="暗色主题" style="width: 100%; border-radius: 8px;">
+      <img src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/images/projects/iot-device/dark_theme.png" alt="暗色主题" style="width: 100%; border-radius: 8px;">
       <p style="text-align: center; margin-top: 5px; color: #666; font-size: 0.9em;">暗色主题</p>
     </div>
   </div>
@@ -344,11 +344,11 @@ draft: false
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
   <div>
-    <img src="/images/projects/iot-device/blue_scan.jpg" alt="蓝牙扫描" style="width: 100%; border-radius: 8px;">
+    <img src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/images/projects/iot-device/blue_scan.jpg" alt="蓝牙扫描" style="width: 100%; border-radius: 8px;">
     <p style="text-align: center; margin-top: 5px; color: #666; font-size: 0.9em;">蓝牙设备扫描</p>
   </div>
   <div>
-    <img src="/images/projects/iot-device/wifi_config.jpg" alt="WiFi配网" style="width: 100%; border-radius: 8px;">
+    <img src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/images/projects/iot-device/wifi_config.jpg" alt="WiFi配网" style="width: 100%; border-radius: 8px;">
     <p style="text-align: center; margin-top: 5px; color: #666; font-size: 0.9em;">WiFi配置界面</p>
   </div>
 </div>
@@ -449,8 +449,8 @@ draft: false
       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 12px;"
       controls
       preload="metadata">
-      <source src="/video/iot_device_server.mp4" type="video/mp4">
-      您的浏览器不支持视频播放，请<a href="/video/iot_device_server.mp4">下载视频文件</a>查看。
+      <source src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/video/iot_device_server.mp4" type="video/mp4">
+      您的浏览器不支持视频播放，请<a href="https://wulianhuangtonxue.github.io/huangweibin-portfolio/video/iot_device_server.mp4">下载视频文件</a>查看。
     </video>
   </div>
   <p style="text-align: center; margin-top: 10px; color: #666; font-size: 0.9em;">服务端完整演示视频 (MP4格式，支持在线播放)</p>
@@ -462,8 +462,8 @@ draft: false
       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 12px;"
       controls
       preload="metadata">
-      <source src="/video/networking_play.mp4" type="video/mp4">
-      您的浏览器不支持视频播放，请<a href="/video/networking_play.mp4">下载视频文件</a>查看。
+      <source src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/video/networking_play.mp4" type="video/mp4">
+      您的浏览器不支持视频播放，请<a href="https://wulianhuangtonxue.github.io/huangweibin-portfolio/video/networking_play.mp4">下载视频文件</a>查看。
     </video>
   </div>
   <p style="text-align: center; margin-top: 10px; color: #666; font-size: 0.9em;">配网-模拟联动 (MP4格式，支持在线播放)</p>
@@ -475,8 +475,8 @@ draft: false
       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 12px;"
       controls
       preload="metadata">
-      <source src="/video/networking.mp4" type="video/mp4">
-      您的浏览器不支持视频播放，请<a href="/video/networking.mp4">下载视频文件</a>查看。
+      <source src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/video/networking.mp4" type="video/mp4">
+      您的浏览器不支持视频播放，请<a href="https://wulianhuangtonxue.github.io/huangweibin-portfolio/video/networking.mp4">下载视频文件</a>查看。
     </video>
   </div>
   <p style="text-align: center; margin-top: 10px; color: #666; font-size: 0.9em;">配网app (MP4格式，支持在线播放)</p>
@@ -488,8 +488,8 @@ draft: false
       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 12px;"
       controls
       preload="metadata">
-      <source src="/video/devicesimulator.mp4" type="video/mp4">
-      您的浏览器不支持视频播放，请<a href="/video/devicesimulator.mp4">下载视频文件</a>查看。
+      <source src="https://wulianhuangtonxue.github.io/huangweibin-portfolio/video/devicesimulator.mp4" type="video/mp4">
+      您的浏览器不支持视频播放，请<a href="https://wulianhuangtonxue.github.io/huangweibin-portfolio/video/devicesimulator.mp4">下载视频文件</a>查看。
     </video>
   </div>
   <p style="text-align: center; margin-top: 10px; color: #666; font-size: 0.9em;">物联网设备模拟器 (MP4格式，支持在线播放)</p>
@@ -587,6 +587,6 @@ draft: false
 ---
 
 <div style="text-align: center; margin-top: 40px;">
-  <a href="/projects/" style="display: inline-block; background: #f5576c; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 500; margin: 0 10px;">← 返回项目列表</a>
+  <a href="../" style="display: inline-block; background: #f5576c; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 500; margin: 0 10px;">← 返回项目列表</a>
   <!-- <a href="https://github.com/wulianhuangtonxue/iot-device" style="display: inline-block; background: #333; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 500; margin: 0 10px;">查看源码 →</a> -->
 </div>

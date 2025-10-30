@@ -1,7 +1,6 @@
 # 本地开发时使用默认 URL
-baseURL = 'https://wulianhuangtonxue.github.io/'  # GitHub Pages 根域名
-# 如果使用子路径（如项目名），需要修改所有静态资源路径
-# 部署到 Gitee Pages 时使用：'https://wulianhuangtonxue.gitee.io/'
+baseURL = 'https://wulianhuangtonxue.github.io/huangweibin-portfolio/'  # GitHub Pages 项目路径
+# 部署到 Gitee Pages 时使用：'https://wulianhuangtonxue.gitee.io/huangweibin-portfolio/'
 # 使用自定义域名时设置：'https://huangweibin.dev/'
 languageCode = 'zh-cn'
 title = '黄炜彬 - 全栈开发工程师'
@@ -29,7 +28,7 @@ theme = 'PaperMod'
   hideSummary = false
   showtoc = true
   tocopen = true
-  customCSS = ["/css/custom.css"]
+  # customCSS = ["/css/custom.css"]  # 已移动到 layouts/partials/head.html 中处理
 
   [params.homeInfoParams]
     Title = "你好，我是黄炜彬"
