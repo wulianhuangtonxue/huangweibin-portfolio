@@ -65,8 +65,20 @@
     <aside class="toc-sidebar">
       <div class="toc">
         <div class="inner">
-          <h2>目录</h2>
-          {{- .TableOfContents }}
+          <h2>
+            目录
+            <button class="toc-toggle" aria-label="切换目录显示">
+              <svg class="toc-icon toc-icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7 10l5 5 5-5H7z"></path>
+              </svg>
+              <svg class="toc-icon toc-icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                <path d="M7 14l5-5 5 5H7z"></path>
+              </svg>
+            </button>
+          </h2>
+          <div class="toc-content">
+            {{- .TableOfContents }}
+          </div>
         </div>
       </div>
     </aside>

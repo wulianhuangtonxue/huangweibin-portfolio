@@ -72,3 +72,112 @@
     display: block !important;
     margin: 1rem 0 !important;
 }
+
+/* ========================================
+   移动端目录切换功能
+   ======================================== */
+
+/* 目录切换按钮样式 */
+.toc h2 {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+}
+
+.toc-toggle {
+    background: none !important;
+    border: none !important;
+    padding: 4px 8px !important;
+    cursor: pointer !important;
+    border-radius: 4px !important;
+    color: var(--primary) !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 32px !important;
+    height: 32px !important;
+}
+
+.toc-toggle:hover {
+    background: var(--tertiary) !important;
+}
+
+.toc-toggle:active {
+    transform: scale(0.95) !important;
+}
+
+.toc-icon {
+    width: 20px !important;
+    height: 20px !important;
+    transition: transform 0.3s ease !important;
+}
+
+/* 默认桌面端目录为展开状态 */
+.toc-content {
+    display: block !important;
+}
+
+/* 移动端响应式样式 */
+@media (max-width: 768px) {
+    /* 移动端调整为垂直布局 */
+    .content-container {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    /* 移动端隐藏目录，默认不展开 */
+    .toc-sidebar {
+        position: static !important;
+        flex: none !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .toc {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* 移动端隐藏目录内容 */
+    .toc-content {
+        display: none !important;
+        margin-top: 15px !important;
+        padding-top: 15px !important;
+        border-top: 1px solid var(--border) !important;
+    }
+
+    /* 目录展开状态 */
+    .toc-sidebar.toc-open .toc-content {
+        display: block !important;
+    }
+
+    .toc-sidebar.toc-open .toc-icon-open {
+        display: none !important;
+    }
+
+    .toc-sidebar.toc-open .toc-icon-close {
+        display: block !important;
+    }
+
+    .toc-sidebar.toc-open .toc-icon-close + .toc-icon-open {
+        display: none !important;
+    }
+
+    /* 图标旋转动画 */
+    .toc-sidebar.toc-open .toc-icon {
+        transform: rotate(180deg) !important;
+    }
+}
+
+/* 超小屏幕进一步优化 */
+@media (max-width: 480px) {
+    .content-container {
+        gap: 15px !important;
+    }
+
+    .toc .inner {
+        padding: 0 10px !important;
+    }
+}

@@ -206,3 +206,30 @@
 
 {{- /* Custom CSS - placed at the end to override theme styles */}}
 <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+
+{{- /* 目录切换功能脚本 */}}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tocToggles = document.querySelectorAll('.toc-toggle');
+
+    tocToggles.forEach(function(toggle) {
+        toggle.addEventListener('click', function() {
+            const tocSidebar = this.closest('.toc-sidebar');
+            const openIcon = this.querySelector('.toc-icon-open');
+            const closeIcon = this.querySelector('.toc-icon-close');
+
+            // 切换目录展开状态
+            tocSidebar.classList.toggle('toc-open');
+
+            // 切换图标
+            if (tocSidebar.classList.contains('toc-open')) {
+                if (openIcon) openIcon.style.display = 'none';
+                if (closeIcon) closeIcon.style.display = 'block';
+            } else {
+                if (openIcon) openIcon.style.display = 'block';
+                if (closeIcon) closeIcon.style.display = 'none';
+            }
+        });
+    });
+});
+</script>
