@@ -43,6 +43,9 @@ theme = 'PaperMod'
   [[params.socialIcons]]
     name = "email"
     url = "mailto:hwb15218120562@126.com"
+  [[params.socialIcons]]
+    name = "csdn"
+    url = "https://blog.csdn.net/weixin_54891898?spm=1000.2115.3001.5343"
 
 [menu]
   [[menu.main]]
