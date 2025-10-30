@@ -32,7 +32,7 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Build with Hugo
         run: |
-          hugo --minify
+          hugo --minify --baseURL 'https://wulianhuangtonxue.github.io/huangweibin-portfolio/'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

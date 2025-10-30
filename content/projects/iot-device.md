@@ -443,7 +443,7 @@ draft: false
 ## 演示视频
 
 <div style="margin: 30px 0;">
-  <h3>项目演示</h3>
+  <h3>服务端演示</h3>
   <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); background: #f5f5f5;">
     <video
       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 12px;"
@@ -456,7 +456,7 @@ draft: false
   <p style="text-align: center; margin-top: 10px; color: #666; font-size: 0.9em;">服务端完整演示视频 (MP4格式，支持在线播放)</p>
 </div>
 <div style="margin: 30px 0;">
-  <h3>项目演示</h3>
+  <h3>配网-模拟联动演示</h3>
   <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); background: #f5f5f5;">
     <video
       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 12px;"
@@ -469,7 +469,7 @@ draft: false
   <p style="text-align: center; margin-top: 10px; color: #666; font-size: 0.9em;">配网-模拟联动 (MP4格式，支持在线播放)</p>
 </div>
 <div style="margin: 30px 0;">
-  <h3>项目演示</h3>
+  <h3>配网App</h3>
   <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); background: #f5f5f5;">
     <video
       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 12px;"
@@ -482,7 +482,7 @@ draft: false
   <p style="text-align: center; margin-top: 10px; color: #666; font-size: 0.9em;">配网app (MP4格式，支持在线播放)</p>
 </div>
 <div style="margin: 30px 0;">
-  <h3>项目演示</h3>
+  <h3>模拟器App</h3>
   <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); background: #f5f5f5;">
     <video
       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 12px;"

@@ -33,7 +33,7 @@
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
 
   <!-- 两栏布局：左侧内容，右侧目录 -->
-  <div class="content-container" style="display: flex; gap: 30px; width: 100%;">
+  <div class="content-container" style="display: flex; gap: 30px;">
     <!-- 左侧主要内容区域 -->
     <div class="main-content" style="flex: 1 1 auto; min-width: 0;">
       {{- if .Content }}

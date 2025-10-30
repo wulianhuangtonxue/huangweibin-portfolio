@@ -1,0 +1,45 @@
+/* 自定义主题变量 - 扩大内容宽度 */
+:root {
+    /* 增加主内容区域宽度 */
+    --main-width: 1200px;
+    /* 减少左右边距 */
+    --gap: 16px;
+    /* 保持合适的导航宽度 */
+    --nav-width: 1280px;
+}
+
+/* 让内容更靠左（减少最大宽度限制，使内容可以利用更多空间） */
+.main {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* 调整目录样式 - 让目录更宽 */
+.toc {
+    max-width: 100%;
+    width: 100%;
+}
+
+/* 调整目录内部边距 */
+.toc .inner {
+    margin: 10px 0;
+    padding: 0 15px;
+}
+
+/* 确保内容区域能够充分利用宽度 */
+.post-content {
+    max-width: 100%;
+}
+
+/* 调整表格响应式 */
+.post-content table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* 代码块自适应宽度 */
+.post-content .highlight {
+    max-width: 100%;
+    overflow-x: auto;
+}

@@ -1,5 +1,7 @@
-# baseURL = 'https://huangweibin.dev/'  # 如果使用自定义域名
-baseURL = 'https://wulianhuangtonxue.github.io/huangweibin-portfolio/'  # GitHub Pages 子路径
+# 本地开发时使用默认 URL
+# 部署到 GitHub Pages 时使用：--baseURL 'https://wulianhuangtonxue.github.io/huangweibin-portfolio/'
+# 部署到 Gitee Pages 时使用：--baseURL 'https://wulianhuangtonxue.gitee.io/huangweibin-portfolio/'
+# baseURL = 'https://huangweibin.dev/'  # 自定义域名
 languageCode = 'zh-cn'
 title = '黄炜彬 - 全栈开发工程师'
 theme = 'PaperMod'
@@ -26,6 +28,7 @@ theme = 'PaperMod'
   hideSummary = false
   showtoc = true
   tocopen = true
+  customCSS = ["css/custom.css"]
 
   [params.homeInfoParams]
     Title = "你好，我是黄炜彬"
